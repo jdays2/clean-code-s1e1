@@ -8,22 +8,23 @@
 </head>
 
 <body class="background">
-  <div class="header">
+
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" class="header__img">
     <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
     </a>
-  </div>
+  </header>
 
-  <div class="main-wrapper">
+  <main class="main-wrapper">
 
-    <p id="topSectionForAddingElementToList" class="create-task">
+    <form onsubmit="handleSubmit(event)" class="create-task">
       <label for="new-task" class="title">Add Item</label>
       <div class="create-task__wrapper">
         <input id="new-task" class="create-task__name" type="text">
         <button class="create-task__button button">Add</button>
       </div>
-    </p>
+    </form>
     
     <h3 class="title">Todo</h3>
 
@@ -62,7 +63,7 @@
         </button>
       </li>
     </ul>
-  </div>
+  </main>
 
   <script src="app.js"></script>
 </body>
