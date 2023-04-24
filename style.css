@@ -157,20 +157,25 @@
   transform: rotateZ(0);
 }
 
-.task-list #done .item__label {
+.task-list #done
+.item__label {
   text-decoration: line-through;
   color: #888;
 }
 
-.task-list__item .item__title {
+.task-list__item
+.item__title {
   display: none;
 }
 
-.task-list .item__edit .item__title {
+.task-list
+.item__edit
+.item__title {
   display: inline-block;
   width: 224px;
 }
 
-.item__edit .item__label {
+.item__edit
+.item__label {
   display: none;
 }
