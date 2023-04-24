@@ -20,53 +20,66 @@
 
   <main class="main-wrapper">
 
-    <section class="create-task">
-      <label for="new-task" class="title">Add Item</label>
-      <div class="create-task__wrapper">
-        <input id="new-task" class="create-task__name" type="text">
-        <button class="create-task__button button">Add</button>
-      </div>
-    </section>
-    
-    <h3 class="title">Todo</h3>
+    <section class="add-task">
+      
+      <h3 class="title">Add Item</h3>
 
-    <section id="undone" class="task-list">
+      <div class="create-task">
         
-      <div class="task-list__item item">
-        <input type="checkbox" class="item__checkbox">
-        <label class="item__label">Pay Bills</label>
-        <input type="text" class="item__title">
-        <button class="item__edit-button edit-button button">Edit</button>
-        <button class="item__delete-button delete-button button">
-          <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img">
-        </button>
+        <div class="create-task__wrapper">
+          <input id="new-task" class="create-task__name" type="text">
+          <button class="create-task__button button">Add</button>
+        </div>
+      
       </div>
 
-      <div class="task-list__item item item__edit">
-        <input type="checkbox" class="item__checkbox">
-        <label class="item__label">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="item__title">
-        <button class="item__edit-button edit-button button">Save</button>
-        <button class="item__delete-button delete-button button">
-          <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img" >
-        </button>
-      </div>
+    </section>
+    <section class="undone-tasks">
+
+      <h3 class="title">Todo</h3>
+
+      <ul id="undone" class="task-list">
+
+        <li class="task-list__item item">
+          <input type="checkbox" class="item__checkbox">
+          <label class="item__label">Pay Bills</label>
+          <input type="text" class="item__title">
+          <button class="item__edit-button edit-button button">Edit</button>
+          <button class="item__delete-button delete-button button">
+            <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img">
+          </button>
+        </li>
+
+        <li class="task-list__item item item__edit">
+          <input type="checkbox" class="item__checkbox">
+          <label class="item__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="item__title">
+          <button class="item__edit-button edit-button button">Save</button>
+          <button class="item__delete-button delete-button button">
+            <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img" >
+          </button>
+        </li>
+
+      </ul>
     </section>
     
-    <h3 class="title">Completed</h3>
-    
-    <section id="done" class="task-list">
+    <section class="done-tasks">
 
-      <div class="task-list__item item">
-        <input type="checkbox" class="item__checkbox" checked>
-        <label class="item__label">See the Doctor</label>
-        <input type="text" class="item__title">
-        <button class="item__edit-button edit-button button">Edit</button>
-        <button class="item__delete-button delete-button button">
-          <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img">
-        </button>
-      </div>
+      <h3 class="title">Completed</h3>
+      
+      <ul id="done" class="task-list">
 
+        <li class="task-list__item item">
+          <input type="checkbox" class="item__checkbox" checked>
+          <label class="item__label">See the Doctor</label>
+          <input type="text" class="item__title">
+          <button class="item__edit-button edit-button button">Edit</button>
+          <button class="item__delete-button delete-button button">
+            <img src="./remove.svg" class="delete-button__img" alt="delete-symbol-img">
+          </button>
+        </li>
+
+      </ul>
     </section>
   </main>
 
