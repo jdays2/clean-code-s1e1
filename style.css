@@ -46,6 +46,7 @@
   to {
     transform: scale(.95);
   }
+
 }
 
 .header__link {
@@ -171,13 +172,13 @@
 }
 
 .task-list
-.item__edit
+.item--edit
 .item__title {
   display: inline-block;
   width: 224px;
 }
 
-.item__edit
+.item--edit
 .item__label {
   display: none;
 }
